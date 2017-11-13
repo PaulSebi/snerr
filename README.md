@@ -4,7 +4,8 @@ Snerr
 
 Snerr helps manage error-code creation, simplifies code, and decode error codes into meaningful messages formatted matching your requirement    
 
-#### Let's Dive Straight In!
+## Usage
+----
 
 Initialize 
 
@@ -92,17 +93,18 @@ Every time an `sn.err()` function is called, the `code` object is checked and/or
     }
 }
 ```
-The message need not be passed either; as long as the collaborator/other developer has a copy of `snerrfile.json`, they can decode. Infact, the this decoding can be done with a different configuration, formatted according to new requirements.
+The message need not be passed either; as long as the collaborator/other developer has a copy of `snerrfile.json`, they can decode the snerr code. Infact, the this decoding can be done with a different configuration, formatted according to new requirements.
 
-Ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweaking the value of config.
+ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweaking the config.
 
-#### Docs
+## Docs
+---
 
 **snerr** exposes two methods: 
 
 * `err(snerr,raw, addMessage)` where,
 
-    | variable    | Data Type | About                                            |
+    | Variable    | Data Type | About                                            |
     | ------------|:---------:|--------------------------------------------------|
     | `err`       | `object`  | error object containing code, err, (and message) |
     | `snerr`     | `string`  | error code in snerr configuration                |
@@ -110,11 +112,15 @@ Ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweakin
     | `addMessage`| `boolean` | add decoded message? (`false` by default)        |
 
 * `show(snerr)` where,
+
     | Variable  | Data Type | About                  |
     |:---------:|:---------:|:----------------------:|
     | `show`    | `string`  | decoded message string |
     | `snerr`   | `string`  | snerr code             |
 
-##### License ISC
+## License 
+----
+
+ISC
 
 
