@@ -5,7 +5,6 @@ Snerr
 Snerr helps manage error-code creation, simplifies code, and decode error codes into meaningful messages formatted matching your requirement    
 
 ## Usage
-----
 
 Initialize 
 
