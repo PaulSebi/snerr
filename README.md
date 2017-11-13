@@ -96,6 +96,8 @@ The message need not be passed either; as long as the collaborator/other develop
 
 ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweaking the config.
 
+> Do not forget to create a `snerrfile.json` file in the root directory of your application. Please follow the format for the config strictly; you can alternatively choose to copy the file from `node_modules/snerr/snerrfile.json
+
 ## Docs
 
 **snerr** exposes two methods: 
