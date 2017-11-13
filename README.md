@@ -98,7 +98,6 @@ The message need not be passed either; as long as the collaborator/other develop
 ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweaking the config.
 
 ## Docs
----
 
 **snerr** exposes two methods: 
 
@@ -119,7 +118,6 @@ ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweakin
     | `snerr`   | `string`  | snerr code             |
 
 ## License 
-----
 
 ISC
 
