@@ -15,9 +15,9 @@ In your code, say you need:
 ```javascript
 if(err){
     const error = {
-        code = "SN201NF",
-        raw = err,
-        message = "Database error in User : Not Found"
+        code : "SN201NF",
+        raw : err,
+        message : "Database error in User : Not Found"
     }
 }
 ```
@@ -92,7 +92,7 @@ Every time an `sn.err()` function is called, the `code` object is checked and/or
     }
 }
 ```
-The message need not be passed either; as long as the collaborator/other developer has a copy of `snerrfile.json`, they can decode the snerr code. Infact, the this decoding can be done with a different configuration, formatted according to new requirements.
+The message need not be passed either; as long as the collaborator/other developer has a copy of `snerrfile.json`, they can decode the snerr code. Infact, the decoding can be done with a different configuration, formatted according to new requirements.
 
 ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweaking the config.
 
