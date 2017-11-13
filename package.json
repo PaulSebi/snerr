@@ -1,0 +1,22 @@
+{
+  "name": "snerr",
+  "version": "0.0.1",
+  "description": "Managing error codes and messages much better and easier!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PaulSebi/snerr.git"
+  },
+  "author": "PaulSebi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulSebi/snerr/issues"
+  },
+  "homepage": "https://github.com/PaulSebi/snerr#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
