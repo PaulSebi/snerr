@@ -11,7 +11,42 @@ try{
     })
 }
 catch(e){
-    return console.error('SN101NF')
+    const snerr = {
+        "config": [
+          {
+            "pre": "",
+            "post": " - ",
+            "length": 2,
+            "skip": false
+          },
+          {
+            "pre": "",
+            "post": " error ",
+            "length": 1,
+            "skip": false
+          },
+          {
+            "pre": " in ",
+            "post": "",
+            "length": 2,
+            "skip": false
+          },
+          {
+            "pre": " : ",
+            "post": "",
+            "length": 2,
+            "skip": false
+          }
+        ],
+        "code": {}
+      }
+    try {
+        fs.writeFileSync('./snerrfile.json', JSON.stringify(snerr, null, 2))
+    }
+    catch(e){
+        return console.error('SN101NF')
+    }
+    return console.error('SN101CF')
 }
 
 module.exports = {

@@ -2,7 +2,8 @@ Snerr
 =====
 ### An error-message and error-code manager for developers and teams 
 
-Snerr helps manage error-code creation, simplifies code, and decode error codes into meaningful messages formatted matching your requirement    
+Create your own **Error Code Standard** and share easily with your team!
+Snerr helps manage error-code creation, simplifies code, and helps decode error codes into meaningful messages in a format matching your requirement.
 
 ## Usage
 
@@ -54,7 +55,7 @@ Error codes are generated as a JSON object, where,
     }
 }
 ```
-With **snerr**, the developer feeds in the configurations as an array representing the nested levels of the code
+Dev feeds in the config as an array representing the nested levels of the code
 
 ```javascript
 {
@@ -81,7 +82,7 @@ With **snerr**, the developer feeds in the configurations as an array representi
     }]
 }
 ```
-Every time an `sn.err()` function is called, the `code` object is checked and/or a new node created if the code is missing. The dev fills in the values according to his need after one run of the server
+Every time an `sn.err()` function is called, the `code` object is checked and/or a new node created if the code is missing. The dev fills in the values according to his need after one run of the server covering all `sn.err` calls.
 
 ```javascript
 {
@@ -96,7 +97,7 @@ The message need not be passed either; as long as the collaborator/other develop
 
 ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweaking the config.
 
-> Do not forget to create a `snerrfile.json` file in the root directory of your application. Please follow the format for the config strictly; you can alternatively choose to copy the file from `node_modules/snerr/snerrfile.json
+> Create a `snerrfile.json` file in the root directory of your application. Please follow the format for the config strictly; you can alternatively choose to copy the file from `node_modules/snerr/snerrfile.json`, or **snerr** will do it for you.
 
 ## Docs
 
@@ -121,5 +122,3 @@ ex. the front end guy can decode `SN401NF` as `User Not Found` by simply tweakin
 ## License 
 
 ISC
-
-
