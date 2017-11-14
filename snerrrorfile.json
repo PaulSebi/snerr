@@ -1,0 +1,38 @@
+{
+    "config": [
+      {
+        "pre": "",
+        "post": " - ",
+        "length": 2,
+        "skip": false
+      },
+      {
+        "pre": "",
+        "post": " error ",
+        "length": 3,
+        "skip": false
+      },
+      {
+        "pre": " : ",
+        "post": "",
+        "length": 2,
+        "skip": false
+      }
+    ],
+    "code": {
+        "SN" : {
+            "101" : {
+                "is" : "Snerror",
+                "CF" : {
+                    "is" : "Created File"
+                },
+                "FE" : {
+                    "is" : "Format Error"
+                },
+                "NF" : {
+                    "is" : "File Not Found"
+                }
+            }
+        }
+    }
+  }
